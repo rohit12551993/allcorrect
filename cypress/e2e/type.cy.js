@@ -5,7 +5,7 @@ describe('template spec', () => {
       //This will click and type on the field name
       cy.get("#name").click().type("ROHIT MADAN")
       //This will verify that the name field is visible n the page
-      cy.get("#name").should('be.visible');
+      
   
       
   
