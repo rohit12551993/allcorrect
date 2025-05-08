@@ -1,5 +1,5 @@
-describe('template spec', () => {
-    it('passes', () => {
+describe('typing ', () => {
+    it('typing into a specific field box', () => {
       //This will open the website
       cy.visit('https://testautomationpractice.blogspot.com/')
       //This will click and type on the field name

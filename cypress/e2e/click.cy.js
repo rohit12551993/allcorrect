@@ -1,5 +1,5 @@
-describe('template spec', () => {
-  it('passes', () => {
+describe('click', () => {
+  it('clicking on a particular element', () => {
     //This will open the website
     cy.visit('https://testautomationpractice.blogspot.com/')
     //This will click on the field name
