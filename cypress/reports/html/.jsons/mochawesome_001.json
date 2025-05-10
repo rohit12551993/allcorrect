@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-05-10T05:17:07.789Z",
+    "end": "2025-05-10T05:17:18.359Z",
+    "duration": 10570,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "73f3a4b6-f4c2-4268-a78e-5c7f4d965342",
+      "title": "",
+      "fullFile": "cypress\\e2e\\ReadingData.cy.js",
+      "file": "cypress\\e2e\\ReadingData.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b338bd83-998b-439d-8658-c1746feed5a4",
+          "title": "reading data from file",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "reading data from downloaded file",
+              "fullTitle": "reading data from file reading data from downloaded file",
+              "timedOut": null,
+              "duration": 10497,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\ReadingData.cy.js\\\\reading data from file -- reading data from downloaded file (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.readFile(\"cypress/downloads/dummy_file.txt\").then(data => {\n  cy.log(data);\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: `cy.readFile(\"cypress/downloads/dummy_file.txt\")` failed because the file does not exist at the following path:\n\n`C:\\Users\\kanik\\Cypress_Automation\\cypress\\downloads\\dummy_file.txt`\n\nhttps://on.cypress.io/readfile",
+                "estack": "AssertionError: Timed out retrying after 10000ms: `cy.readFile(\"cypress/downloads/dummy_file.txt\")` failed because the file does not exist at the following path:\n\n`C:\\Users\\kanik\\Cypress_Automation\\cypress\\downloads\\dummy_file.txt`\n\nhttps://on.cypress.io/readfile\n    at Context.eval (webpack://cypressautomaion/./cypress/e2e/ReadingData.cy.js:3:9)",
+                "diff": null
+              },
+              "uuid": "6f2a9aee-5dd7-4672-88f3-c94462561f54",
+              "parentUUID": "b338bd83-998b-439d-8658-c1746feed5a4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6f2a9aee-5dd7-4672-88f3-c94462561f54"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10497,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\html\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

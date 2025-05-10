@@ -6,5 +6,6 @@ describe("single file",()=>{
     //this will upload a single file
     cy.get("#singleFileInput").attachFile("test.csv")
     
+    
     })
 })
