@@ -1,0 +1,7 @@
+describe("DELETE API", () => {
+  it("delete", () => {
+    cy.request("DELETE", "https://api.restful-api.dev/objects/6")
+      .its("status")
+      .should("equal", 200);
+  });
+});
