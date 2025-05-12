@@ -1,7 +1,8 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  reporter: "cypress-mochawesome-reporter", // <-- Add this line
+  projectId: 'cz8zh8', // <-- Missing comma was here
+  reporter: "cypress-mochawesome-reporter",
   reporterOptions: {
     reportDir: "cypress/reports/html",
     overwrite: false,
