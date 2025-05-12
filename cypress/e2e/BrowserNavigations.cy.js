@@ -15,5 +15,8 @@ describe("browser naigations",()=>{
         //reloading the page
         cy.reload();
 
+        //reloading the page
+        cy.reload();
+
     })
 })
