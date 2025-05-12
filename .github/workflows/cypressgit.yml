@@ -3,10 +3,10 @@ name: Cypress Tests
 on:
   push:
     branches:
-      - branch2   # or your default branch
+      - main
   pull_request:
     branches:
-      - branch2
+      - main
 
 jobs:
   cypress-run:
@@ -22,7 +22,10 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci  # safer/faster than npm install in CI
+
+      - name: Verify Cypress installed
+        run: npx cypress verify
 
       - name: Run Cypress tests
         run: npx cypress run
