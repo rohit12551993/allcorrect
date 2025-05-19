@@ -1,10 +1,13 @@
-import Rohit from "../../Pages/openinggoogleandwriting";
+import Google from "../../Pages/google";
+import Wikipedia from "../../Pages/wikipedia";
+describe("POM",()=>{
+    it("POM",()=>{
+        const a = new Google();
+        a.typegoogle();
 
-
-describe("POM", () => {
-    it("using POM", () => {
-        const a = new Rohit();
-        a.googletype();
-    });
-});
+        const b = new Wikipedia();
+        b.typewikipedia();
+        
+    })
+})
 
